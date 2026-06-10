@@ -25,6 +25,14 @@ The generated maze is exported as a `.pbm` image file.
 - Procedural Generation
 - PBM Image Format
 
+## Known Limitation
+
+Large mazes may cause stack overflow because the generation algorithm uses recursive DFS.
+
+## Historical Relevance
+
+This is one of my early C++ projects, developed while studying data structures, graphs, recursion, manual memory management, and procedural generation.
+
 ## Usage
 
 Compile with:
@@ -39,6 +47,8 @@ or
 g++ -c perfMaze.cpp vertex.cpp
 g++ -o maze perfMaze.o vertex.o
 ```
+
+
 
 run with:
 ```bash
